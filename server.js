@@ -51,10 +51,6 @@ app.use(logoutRoute);
 app.use(messagesRoute);
 app.use(friend_request_denyRoute);
 
-app.get("/", (req, res) => {
-  res.json({ message: "this backend works" });
-});
-
 io.on("connection", (socket) => {
   // joining a room
   socket.on("join_room", ({ room }) => {
