@@ -13,7 +13,7 @@ const Message = require("./schemas/Message");
 const User = require("./schemas/User");
 
 const app = express();
-const port = 4000;
+const port = 8080;
 
 const http = require("http");
 const server = http.createServer(app);
